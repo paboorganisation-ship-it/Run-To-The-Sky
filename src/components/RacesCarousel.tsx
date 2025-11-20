@@ -52,13 +52,13 @@ export function RacesCarousel({ races }: RacesCarouselProps) {
           <CarouselItem
             key={index}
             className={cn(
-              "pl-4 basis-[80%] md:basis-[70%] lg:basis-[60%] transition-all duration-500 ease-in-out", // Réduction de la largeur des éléments
+              "pl-4 basis-[70%] md:basis-[60%] lg:basis-[50%] transition-all duration-500 ease-in-out", // Largeur ajustée pour la carte active
               index === selectedIndex
                 ? "opacity-100" // Élément actif : entièrement visible
                 : index === selectedIndex + 1
-                ? "opacity-50 translate-x-4" // Élément suivant : transparent, légèrement décalé à droite
+                ? "opacity-50" // Élément suivant : transparent, sans décalage
                 : index === selectedIndex - 1
-                ? "opacity-50 -translate-x-4" // Élément précédent : transparent, légèrement décalé à gauche
+                ? "opacity-50" // Élément précédent : transparent, sans décalage
                 : "opacity-0 pointer-events-none" // Autres éléments : cachés et non interactifs
             )}
           >
