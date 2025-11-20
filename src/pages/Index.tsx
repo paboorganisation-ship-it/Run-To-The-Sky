@@ -5,7 +5,7 @@ import { RacesCarousel } from "@/components/RacesCarousel";
 import { races } from "@/data/races"; // Importez les données des courses
 
 const Index = () => {
-  const heroImageUrl = "https://miro.medium.com/v2/resize:fit:1400/1*jI7dGJJ-JuinU9Va2c16Hg.jpeg"; // URL de l'image d'arrière-plan mise à jour
+  const heroImageUrl = "/images/Logo.webp"; // URL de l'image d'arrière-plan mise à jour pour l'image locale
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
