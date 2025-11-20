@@ -42,7 +42,7 @@ export const races: Race[] = [
     location: "Marseille, Provence",
     description: "Une course exigeante à travers les paysages provençaux, culminant au Col de l'Espigoulier.",
     fullDescription: `Le Col de l'Espigoulier, niché dans le massif de la Sainte-Baume, est un joyau de la Provence. Son ascension offre des vues spectaculaires sur la garrigue, les forêts de pins et, par temps clair, jusqu'à la mer. La route est sinueuse et technique, avec des passages raides qui mettront à l'épreuve votre endurance. Ce col est mythique pour son caractère sauvage et préservé, loin de l'agitation urbaine, offrant une immersion totale dans la nature provençale. C'est une course pour ceux qui aiment les défis au cœur d'une nature authentique.`,
-    imageUrl: "https://images.unsplash.com/photo-1598091372837-84322415254a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Remplacé par URL externe
+    imageUrl: "https://www.randoaix.com/wp-content/uploads/5-Col-de-lEspigoulier.jpg", // URL mise à jour
     distance: "11,2km",
     elevationGain: "574m d+",
     slug: slugify("Marseille - Col de l'Espigoulier"),
@@ -59,7 +59,7 @@ export const races: Race[] = [
     location: "Annecy, Alpes",
     description: "Découvrez les panoramas exceptionnels du Semnoz avec vue sur le lac d'Annecy.",
     fullDescription: `Le Semnoz, "montagne d'Annecy", est un belvédère naturel offrant des vues à 360 degrés sur le lac d'Annecy, le Mont Blanc et les massifs environnants. L'ascension est progressive mais soutenue, traversant des alpages verdoyants et des forêts denses. Ce col est mythique pour sa proximité avec la ville d'Annecy et son accessibilité, tout en offrant un véritable défi montagnard. La récompense au sommet est un panorama à couper le souffle, faisant de cette course une expérience inoubliable pour les amoureux de la montagne et des grands espaces.`,
-    imageUrl: "https://images.unsplash.com/photo-1587502537000-211212222222?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Remplacé par URL externe
+    imageUrl: "https://d2exd72xrrp1s7.cloudfront.net/www/000/1k4/rv/rvgfk7bamg4zuk18td3k12wc3gt6mmfq-uhi19065905/0?width=1920&crop=false&q=75", // URL mise à jour
     distance: "17,4km",
     elevationGain: "1212m d+",
     slug: slugify("Annecy - Semnoz"),
@@ -76,7 +76,7 @@ export const races: Race[] = [
     location: "Briançon, Hautes-Alpes",
     description: "Une ascension légendaire dans les Alpes, au cœur des paysages grandioses du Lautaret.",
     fullDescription: `Le Col du Lautaret est un passage historique et majestueux des Hautes-Alpes, reliant la vallée de la Romanche à celle de la Guisane. C'est un col de haute montagne, souvent balayé par le vent, offrant des paysages alpins grandioses et une flore exceptionnelle. Mythique pour son rôle de porte d'entrée vers le Col du Galibier et son histoire dans le Tour de France, le Lautaret est une ascension longue et régulière, idéale pour tester son endurance en altitude. La beauté sauvage et l'immensité des paysages en font une course mémorable.`,
-    imageUrl: "https://images.unsplash.com/photo-1506905925346-21d027d21914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Remplacé par URL externe
+    imageUrl: "https://www.ecrins-parcnational.fr/sites/ecrins-parcnational.com/files/styles/pleine_page/public/patrimoine/12040/body/019189.jpg?itok=QIYrn8HU", // URL mise à jour
     distance: "20km", // Exemple de distance
     elevationGain: "800m d+", // Exemple de dénivelé
     slug: slugify("Briançon - Col du Lautaret"),
@@ -93,7 +93,7 @@ export const races: Race[] = [
     location: "L'Alpe d'Huez, Isère",
     description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
     fullDescription: `L'Alpe d'Huez est sans doute l'ascension la plus célèbre du cyclisme mondial, avec ses 21 virages numérotés qui mènent à la station. Chaque virage est une histoire, un défi, et une opportunité de se mesurer aux légendes. La course est une véritable épreuve de force et de mental, avec des pentes raides et une ambiance électrique. C'est un col mythique non seulement pour son histoire sportive, mais aussi pour la sensation unique de gravir une icône, sous les encouragements des spectateurs. Une expérience à vivre absolument pour tout coureur.`,
-    imageUrl: "https://images.unsplash.com/photo-1500382017468-9049cea7614f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Remplacé par URL externe
+    imageUrl: "https://hoteljardindeneuilly.com/wp-content/uploads/2025/08/alpe-dhuez-the-ultimate-alpine-adventure-you-cant-miss.webp", // URL mise à jour
     distance: "13.8km", // Exemple de distance
     elevationGain: "1071m d+", // Exemple de dénivelé
     slug: slugify("L'Alpe d'Huez"),
