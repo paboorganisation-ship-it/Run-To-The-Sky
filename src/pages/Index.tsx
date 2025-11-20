@@ -1,15 +1,35 @@
 "use client";
 
 import { MadeWithDyad } from "@/components/made-with-dyad";
-import { NextRaceCard } from "@/components/NextRaceCard";
+import { RacesCarousel } from "@/components/RacesCarousel"; // Import du nouveau composant RacesCarousel
 
 const Index = () => {
-  const nextRace = {
-    name: "Inscris-toi sur notre prochaine course : Nice - Col d'Eze",
-    date: "12 Octobre 2026",
-    location: "Nice, Côte d'Azur",
-    description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au bord de la mer Méditerranée et au pied des Alpes.",
-  };
+  const upcomingRaces = [
+    {
+      name: "Nice - Col d'Eze",
+      date: "12 Octobre 2026",
+      location: "Nice, Côte d'Azur",
+      description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au bord de la mer Méditerranée et au pied des Alpes.",
+    },
+    {
+      name: "Mont Blanc Ultra Trail",
+      date: "25 Juillet 2027",
+      location: "Chamonix, Alpes",
+      description: "L'ultime défi autour du Mont Blanc.",
+    },
+    {
+      name: "Pyrénées Sky Race",
+      date: "15 Septembre 2027",
+      location: "Lourdes, Pyrénées",
+      description: "Une course technique au cœur des Pyrénées.",
+    },
+    {
+      name: "Trail des Calanques",
+      date: "20 Mars 2027",
+      location: "Marseille, Provence",
+      description: "Course côtière avec des vues imprenables sur les Calanques.",
+    },
+  ];
 
   const heroImageUrl = "https://images.unsplash.com/photo-1551776235-6629a8867625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
@@ -31,13 +51,9 @@ const Index = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center flex-grow w-full max-w-6xl mx-auto py-8 px-4">
-        {/* Le carrousel n'est plus nécessaire ici car l'image est en arrière-plan */}
-        {/* <div className="mb-16 w-full">
-          <HeroCarousel />
-        </div> */}
-
+        <h2 className="text-4xl font-bold text-center mb-8">Nos prochaines courses</h2>
         <div className="mb-16 w-full">
-          <NextRaceCard race={nextRace} />
+          <RacesCarousel races={upcomingRaces} />
         </div>
       </div>
       <MadeWithDyad />
