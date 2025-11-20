@@ -42,7 +42,8 @@ export function RacesCarousel({ races }: RacesCarouselProps) {
   return (
     <Carousel
       opts={{
-        align: "center", // Centre l'élément actif
+        align: "center",
+        loop: true, // Ajout de l'option loop pour un carrousel infini
       }}
       setApi={setApi}
       className="w-full max-w-6xl"
@@ -52,14 +53,14 @@ export function RacesCarousel({ races }: RacesCarouselProps) {
           <CarouselItem
             key={index}
             className={cn(
-              "pl-4 basis-[70%] md:basis-[60%] lg:basis-[50%] transition-all duration-500 ease-in-out", // Largeur ajustée pour la carte active
+              "pl-4 basis-[70%] md:basis-[60%] lg:basis-[50%] transition-all duration-500 ease-in-out",
               index === selectedIndex
-                ? "opacity-100" // Élément actif : entièrement visible
+                ? "opacity-100"
                 : index === selectedIndex + 1
-                ? "opacity-50" // Élément suivant : transparent, sans décalage
+                ? "opacity-50"
                 : index === selectedIndex - 1
-                ? "opacity-50" // Élément précédent : transparent, sans décalage
-                : "opacity-0 pointer-events-none" // Autres éléments : cachés et non interactifs
+                ? "opacity-50"
+                : "opacity-0 pointer-events-none"
             )}
           >
             <div className="p-1">
