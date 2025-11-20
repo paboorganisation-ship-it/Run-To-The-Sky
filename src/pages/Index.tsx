@@ -38,7 +38,7 @@ const Index = () => {
       date: "15 Août 2027",
       location: "L'Alpe d'Huez, Isère",
       description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
-      imageUrl: "https://images.unsplash.com/photo-1500382017468-9049cea7614f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "/images/Alpe huez.jpg", // Utilisation de l'image locale Alpe huez.jpg
     },
   ];
 
