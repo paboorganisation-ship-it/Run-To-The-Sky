@@ -5,9 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import { Navbar } from "./components/Navbar"; // Importez le nouveau composant Navbar
-import LaSerie from "./pages/LaSerie"; // Importez la nouvelle page LaSerie
-import Calendrier from "./pages/Calendrier"; // Importez la nouvelle page Calendrier
+import { Navbar } from "./components/Navbar";
+import LaSerie from "./pages/LaSerie";
+import Calendrier from "./pages/Calendrier";
+import PrepareTaCourse from "./pages/PrepareTaCourse"; // Importez la nouvelle page
 
 const queryClient = new QueryClient();
 
@@ -17,11 +18,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navbar /> {/* Placez la Navbar ici pour qu'elle apparaisse sur toutes les pages */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/la-serie" element={<LaSerie />} /> {/* Nouvelle route */}
-          <Route path="/calendrier" element={<Calendrier />} /> {/* Nouvelle route */}
+          <Route path="/la-serie" element={<LaSerie />} />
+          <Route path="/calendrier" element={<Calendrier />} />
+          <Route path="/prepare-ta-course" element={<PrepareTaCourse />} /> {/* Nouvelle route */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

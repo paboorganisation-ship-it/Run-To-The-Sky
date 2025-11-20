@@ -41,6 +41,13 @@ export function Navbar() {
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link to="/prepare-ta-course">
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Prépare ta course
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
