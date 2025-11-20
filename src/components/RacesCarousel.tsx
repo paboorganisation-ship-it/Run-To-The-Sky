@@ -52,14 +52,14 @@ export function RacesCarousel({ races }: RacesCarouselProps) {
           <CarouselItem
             key={index}
             className={cn(
-              "pl-4 basis-[90%] md:basis-[80%] lg:basis-[70%] transition-all duration-500 ease-in-out",
+              "pl-4 basis-[90%] md:basis-[80%] lg:basis-[70%] transition-all duration-500 ease-in-out", // Garde une base de largeur constante pour tous les éléments
               index === selectedIndex
-                ? "opacity-100 scale-100" // Élément actif : entièrement visible, taille normale
+                ? "opacity-100" // Élément actif : entièrement visible
                 : index === selectedIndex + 1
-                ? "opacity-50 scale-95 translate-x-4" // Élément suivant : transparent, légèrement plus petit, décalé à droite
+                ? "opacity-50 translate-x-4" // Élément suivant : transparent, légèrement décalé à droite
                 : index === selectedIndex - 1
-                ? "opacity-50 scale-95 -translate-x-4" // Élément précédent : transparent, légèrement plus petit, décalé à gauche
-                : "opacity-0 scale-90 pointer-events-none" // Autres éléments : cachés et non interactifs
+                ? "opacity-50 -translate-x-4" // Élément précédent : transparent, légèrement décalé à gauche
+                : "opacity-0 pointer-events-none" // Autres éléments : cachés et non interactifs
             )}
           >
             <div className="p-1">
