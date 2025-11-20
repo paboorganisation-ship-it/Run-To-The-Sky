@@ -52,7 +52,7 @@ export function RacesCarousel({ races }: RacesCarouselProps) {
           <CarouselItem
             key={index}
             className={cn(
-              "pl-4 basis-[90%] md:basis-[80%] lg:basis-[70%] transition-all duration-500 ease-in-out", // Garde une base de largeur constante pour tous les éléments
+              "pl-4 basis-[80%] md:basis-[70%] lg:basis-[60%] transition-all duration-500 ease-in-out", // Réduction de la largeur des éléments
               index === selectedIndex
                 ? "opacity-100" // Élément actif : entièrement visible
                 : index === selectedIndex + 1
