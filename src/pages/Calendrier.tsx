@@ -82,11 +82,12 @@ const Calendrier = () => {
               <CardContent className="flex-grow">
                 <p className="text-lg font-medium mb-1">Date : {race.date}</p>
                 <p className="text-lg font-medium mb-1">Lieu : {race.location}</p>
-                {race.distance && (
-                  <p className="text-lg font-medium mb-1">Distance : {race.distance}</p>
-                )}
-                {race.elevationGain && (
-                  <p className="text-lg font-medium mb-1">Dénivelé : {race.elevationGain}</p>
+                {(race.distance || race.elevationGain) && (
+                  <p className="text-lg font-medium mb-1">
+                    {race.distance}
+                    {race.distance && race.elevationGain && " | "}
+                    {race.elevationGain}
+                  </p>
                 )}
                 {race.imageUrl && (
                   <img
