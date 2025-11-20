@@ -110,7 +110,7 @@ export const races: Race[] = [
     location: "Clermont-Ferrand, Auvergne",
     description: "Une course emblématique au cœur de l'Auvergne, avec l'ascension du majestueux Puy de Dôme.",
     fullDescription: `Le Puy de Dôme, volcan emblématique de la chaîne des Puys, est un site naturel exceptionnel et un défi sportif de taille. Son ascension, autrefois empruntée par le Tour de France, est désormais réservée aux piétons et au train à crémaillère, rendant cette course encore plus exclusive. Le parcours offre des vues panoramiques sur le parc naturel des Volcans d'Auvergne. C'est un col mythique pour son histoire géologique, son importance culturelle et le défi unique qu'il représente, avec des pentes abruptes et un sommet souvent balayé par le vent.`,
-    imageUrl: "https://images.unsplash.com/photo-1620446900000-000000000000?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://www.sport-et-tourisme.fr/wp-content/uploads/2020/09/Le-Puy-Mary-et-le-col-du-Pas-de-Peyrol-%C2%A9Puy-dImages-IMA.jpg", // URL mise à jour
     distance: "13.5km", // Exemple de distance
     elevationGain: "1000m d+", // Exemple de dénivelé
     slug: slugify("Clermont - Puy de Dôme"),
