@@ -35,7 +35,7 @@ const Index = () => {
     },
   ];
 
-  const heroImageUrl = "https://images.unsplash.com/photo-1551776235-6629a8867625?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  const heroImageUrl = "/images/Semnoz.jpg"; // Utilisation de l'image locale Semnoz.jpg
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
