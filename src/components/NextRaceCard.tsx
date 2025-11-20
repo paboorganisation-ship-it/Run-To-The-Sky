@@ -27,6 +27,11 @@ export function NextRaceCard({ race }: NextRaceCardProps) {
         <CardContent>
           <p className="text-lg font-medium mb-2">Date : {race.date}</p>
           <p className="text-lg font-medium">Lieu : {race.location}</p>
+          <img
+            src="https://images.unsplash.com/photo-1587613865763-cd45e84775b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Vue panoramique du Col d'Eze"
+            className="w-full h-48 object-cover rounded-md mt-4"
+          />
         </CardContent>
         <CardFooter>
           <Button onClick={() => setIsRegistrationOpen(true)} className="w-full">
