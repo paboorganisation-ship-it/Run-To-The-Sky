@@ -93,7 +93,7 @@ export const races: Race[] = [
     location: "L'Alpe d'Huez, Isère",
     description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
     fullDescription: `L'Alpe d'Huez est sans doute l'ascension la plus célèbre du cyclisme mondial, avec ses 21 virages numérotés qui mènent à la station. Chaque virage est une histoire, un défi, et une opportunité de se mesurer aux légendes. La course est une véritable épreuve de force et de mental, avec des pentes raides et une ambiance électrique. C'est un col mythique non seulement pour son histoire sportive, mais aussi pour la sensation unique de gravir une icône, sous les encouragements des spectateurs. Une expérience à vivre absolument pour tout coureur.`,
-    imageUrl: "/images/Alpe huez.jpg",
+    imageUrl: "/images/Alped'huez.jpg", // Chemin corrigé
     distance: "13.8km", // Exemple de distance
     elevationGain: "1071m d+", // Exemple de dénivelé
     slug: slugify("L'Alpe d'Huez"),
