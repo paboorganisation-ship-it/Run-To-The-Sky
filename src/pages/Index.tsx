@@ -31,7 +31,7 @@ const Index = () => {
       date: "25 Juillet 2027",
       location: "Briançon, Hautes-Alpes",
       description: "Une ascension légendaire dans les Alpes, au cœur des paysages grandioses du Lautaret.",
-      imageUrl: "https://images.unsplash.com/photo-1506905925346-21d027d21914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "/images/Lautaret.jpg", // Utilisation de l'image locale Lautaret.jpg
     },
     {
       name: "L'Alpe d'Huez",
