@@ -42,7 +42,7 @@ const Index = () => {
     },
   ];
 
-  const heroImageUrl = "/images/Semnoz.jpg"; // Utilisation de l'image locale Semnoz.jpg
+  const heroImageUrl = "/images/Galibier.jpg"; // Utilisation de l'image locale Galibier.jpg
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
