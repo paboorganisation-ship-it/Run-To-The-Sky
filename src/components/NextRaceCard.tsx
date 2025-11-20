@@ -21,7 +21,7 @@ export function NextRaceCard({ race }: NextRaceCardProps) {
     <>
       <Card className="w-full max-w-md mx-auto">
         <CardHeader>
-          <CardTitle>Prochaine Course : {race.name}</CardTitle>
+          <CardTitle>{race.name}</CardTitle>
           <CardDescription>{race.description}</CardDescription>
         </CardHeader>
         <CardContent>
