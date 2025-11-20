@@ -16,7 +16,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col items-center justify-between py-8 px-4 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
       <div className="flex flex-col items-center justify-center flex-grow w-full max-w-6xl mx-auto">
         <h1 className="text-5xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-          Cols en Course
+          Run to the Sky
         </h1>
         <p className="text-xl text-center mb-12 max-w-2xl">
           Découvrez l'adrénaline des courses en montagne. Des paysages à couper le souffle, des défis inoubliables.
