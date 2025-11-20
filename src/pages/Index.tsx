@@ -17,7 +17,7 @@ const Index = () => {
       date: "20 Avril 2027",
       location: "Marseille, Provence",
       description: "Une course exigeante à travers les paysages provençaux, culminant au Col de l'Espigoulier.",
-      imageUrl: "https://images.unsplash.com/photo-1587613865763-cd45e84775b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl: "/images/Espigoulier.jpg", // Utilisation de l'image locale Espigoulier.jpg
     },
     {
       name: "Annecy - Semnoz",
