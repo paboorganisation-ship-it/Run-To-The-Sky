@@ -36,3 +36,4 @@ const App = () => (
 
 export default App;
 // Ceci est un commentaire pour créer une modification à commiter.
+// Nouveau commentaire pour le commit utilisateur.
