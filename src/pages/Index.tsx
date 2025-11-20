@@ -13,25 +13,32 @@ const Index = () => {
       imageUrl: "https://cdn.shopify.com/s/files/1/0612/2635/2718/files/2021_05_col-series-eze-3-14052021.jpg",
     },
     {
-      name: "Mont Blanc Ultra Trail",
-      date: "25 Juillet 2027",
-      location: "Chamonix, Alpes",
-      description: "L'ultime défi autour du Mont Blanc.",
-      imageUrl: "https://images.unsplash.com/photo-1506905925346-21d027d21914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Exemple d'image générique pour les autres courses
-    },
-    {
-      name: "Pyrénées Sky Race",
-      date: "15 Septembre 2027",
-      location: "Lourdes, Pyrénées",
-      description: "Une course technique au cœur des Pyrénées.",
-      imageUrl: "https://images.unsplash.com/photo-1505852679233-0a64777620e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Exemple d'image générique
-    },
-    {
-      name: "Trail des Calanques",
-      date: "20 Mars 2027",
+      name: "Marseille - Col de l'Espigoulier",
+      date: "20 Avril 2027",
       location: "Marseille, Provence",
-      description: "Course côtière avec des vues imprenables sur les Calanques.",
-      imageUrl: "https://images.unsplash.com/photo-1587613865763-cd45e84775b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Exemple d'image générique
+      description: "Une course exigeante à travers les paysages provençaux, culminant au Col de l'Espigoulier.",
+      imageUrl: "https://images.unsplash.com/photo-1587613865763-cd45e84775b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Annecy - Semnoz",
+      date: "15 Juin 2027",
+      location: "Annecy, Alpes",
+      description: "Découvrez les panoramas exceptionnels du Semnoz avec vue sur le lac d'Annecy.",
+      imageUrl: "/images/Semnoz.jpg", // Utilisation de l'image locale Semnoz.jpg
+    },
+    {
+      name: "Briançon - Col du Lautaret",
+      date: "25 Juillet 2027",
+      location: "Briançon, Hautes-Alpes",
+      description: "Une ascension légendaire dans les Alpes, au cœur des paysages grandioses du Lautaret.",
+      imageUrl: "https://images.unsplash.com/photo-1506905925346-21d027d21914?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "L'Alpe d'Huez",
+      date: "15 Août 2027",
+      location: "L'Alpe d'Huez, Isère",
+      description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
+      imageUrl: "https://images.unsplash.com/photo-1500382017468-9049cea7614f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
 
