@@ -6,10 +6,10 @@ import { NextRaceCard } from "@/components/NextRaceCard";
 
 const Index = () => {
   const nextRace = {
-    name: "Course du Col d'Eze",
+    name: "Inscris-toi sur notre prochaine course : Nice - Col d'Eze",
     date: "12 Octobre 2026",
     location: "Nice, Côte d'Azur",
-    description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au cœur des Alpes françaises.",
+    description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au bord de la mer Méditerranée et au pied des Alpes.",
   };
 
   return (
