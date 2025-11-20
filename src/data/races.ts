@@ -10,6 +10,12 @@ export interface Race {
   distance?: string;
   elevationGain?: string;
   slug: string;
+  price: string; // Nouveau champ
+  startAddress: string; // Nouveau champ
+  finishAddress: string; // Nouveau champ
+  aidStations: string; // Nouveau champ
+  howToGetToStartLink: string; // Nouveau champ
+  partnerAccommodationsLink: string; // Nouveau champ
 }
 
 export const races: Race[] = [
@@ -23,6 +29,12 @@ export const races: Race[] = [
     distance: "12,6km",
     elevationGain: "507m d+",
     slug: slugify("Nice - Col d'Eze"),
+    price: "45€",
+    startAddress: "Promenade des Anglais, Nice",
+    finishAddress: "Sommet du Col d'Eze",
+    aidStations: "Km 5, Km 9",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
   {
     name: "Marseille - Col de l'Espigoulier",
@@ -34,6 +46,12 @@ export const races: Race[] = [
     distance: "11,2km",
     elevationGain: "574m d+",
     slug: slugify("Marseille - Col de l'Espigoulier"),
+    price: "40€",
+    startAddress: "Parc des Calanques, Marseille",
+    finishAddress: "Sommet du Col de l'Espigoulier",
+    aidStations: "Km 4, Km 8",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
   {
     name: "Annecy - Semnoz",
@@ -45,6 +63,12 @@ export const races: Race[] = [
     distance: "17,4km",
     elevationGain: "1212m d+",
     slug: slugify("Annecy - Semnoz"),
+    price: "55€",
+    startAddress: "Bords du Lac d'Annecy",
+    finishAddress: "Sommet du Semnoz",
+    aidStations: "Km 6, Km 12",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
   {
     name: "Briançon - Col du Lautaret",
@@ -53,7 +77,15 @@ export const races: Race[] = [
     description: "Une ascension légendaire dans les Alpes, au cœur des paysages grandioses du Lautaret.",
     fullDescription: `Le Col du Lautaret est un passage historique et majestueux des Hautes-Alpes, reliant la vallée de la Romanche à celle de la Guisane. C'est un col de haute montagne, souvent balayé par le vent, offrant des paysages alpins grandioses et une flore exceptionnelle. Mythique pour son rôle de porte d'entrée vers le Col du Galibier et son histoire dans le Tour de France, le Lautaret est une ascension longue et régulière, idéale pour tester son endurance en altitude. La beauté sauvage et l'immensité des paysages en font une course mémorable.`,
     imageUrl: "/images/Lautaret.jpg",
+    distance: "20km", // Exemple de distance
+    elevationGain: "800m d+", // Exemple de dénivelé
     slug: slugify("Briançon - Col du Lautaret"),
+    price: "60€",
+    startAddress: "Centre ville de Briançon",
+    finishAddress: "Col du Lautaret",
+    aidStations: "Km 7, Km 14",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
   {
     name: "L'Alpe d'Huez",
@@ -62,7 +94,15 @@ export const races: Race[] = [
     description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
     fullDescription: `L'Alpe d'Huez est sans doute l'ascension la plus célèbre du cyclisme mondial, avec ses 21 virages numérotés qui mènent à la station. Chaque virage est une histoire, un défi, et une opportunité de se mesurer aux légendes. La course est une véritable épreuve de force et de mental, avec des pentes raides et une ambiance électrique. C'est un col mythique non seulement pour son histoire sportive, mais aussi pour la sensation unique de gravir une icône, sous les encouragements des spectateurs. Une expérience à vivre absolument pour tout coureur.`,
     imageUrl: "/images/Alpe huez.jpg",
+    distance: "13.8km", // Exemple de distance
+    elevationGain: "1071m d+", // Exemple de dénivelé
     slug: slugify("L'Alpe d'Huez"),
+    price: "70€",
+    startAddress: "Bourg d'Oisans",
+    finishAddress: "L'Alpe d'Huez",
+    aidStations: "Km 5, Km 10",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
   {
     name: "Clermont - Puy de Dôme",
@@ -71,6 +111,14 @@ export const races: Race[] = [
     description: "Une course emblématique au cœur de l'Auvergne, avec l'ascension du majestueux Puy de Dôme.",
     fullDescription: `Le Puy de Dôme, volcan emblématique de la chaîne des Puys, est un site naturel exceptionnel et un défi sportif de taille. Son ascension, autrefois empruntée par le Tour de France, est désormais réservée aux piétons et au train à crémaillère, rendant cette course encore plus exclusive. Le parcours offre des vues panoramiques sur le parc naturel des Volcans d'Auvergne. C'est un col mythique pour son histoire géologique, son importance culturelle et le défi unique qu'il représente, avec des pentes abruptes et un sommet souvent balayé par le vent.`,
     imageUrl: "https://images.unsplash.com/photo-1620446900000-000000000000?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    distance: "13.5km", // Exemple de distance
+    elevationGain: "1000m d+", // Exemple de dénivelé
     slug: slugify("Clermont - Puy de Dôme"),
+    price: "50€",
+    startAddress: "Parking des Goules, Orcines",
+    finishAddress: "Sommet du Puy de Dôme",
+    aidStations: "Km 4, Km 8",
+    howToGetToStartLink: "#", // Lien placeholder
+    partnerAccommodationsLink: "#", // Lien placeholder
   },
 ];

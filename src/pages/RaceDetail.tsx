@@ -6,6 +6,7 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { races } from "@/data/races";
 import { Button } from "@/components/ui/button";
 import { RegistrationForm } from "@/components/RegistrationForm";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"; // Import des composants Card
 
 const RaceDetail = () => {
   const { raceSlug } = useParams<{ raceSlug: string }>();
@@ -59,6 +60,39 @@ const RaceDetail = () => {
               {race.elevationGain}
             </p>
           )}
+
+          <Card className="mt-8">
+            <CardHeader>
+              <CardTitle>Détails Pratiques</CardTitle>
+            </CardHeader>
+            <CardContent className="grid gap-4">
+              <p className="text-lg">
+                <span className="font-semibold">Prix :</span> {race.price}
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">Adresse de départ :</span> {race.startAddress}
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">Adresse d'arrivée :</span> {race.finishAddress}
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">Ravitaillement :</span> {race.aidStations}
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">Comment se rendre au départ :</span>{" "}
+                <a href={race.howToGetToStartLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                  Voir les informations
+                </a>
+              </p>
+              <p className="text-lg">
+                <span className="font-semibold">Hébergements partenaires :</span>{" "}
+                <a href={race.partnerAccommodationsLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                  Découvrir
+                </a>
+              </p>
+            </CardContent>
+          </Card>
+
           <h2 className="text-3xl font-bold mt-8 mb-4">Le col mythique</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             {race.fullDescription}
