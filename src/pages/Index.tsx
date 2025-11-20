@@ -6,10 +6,10 @@ import { NextRaceCard } from "@/components/NextRaceCard";
 
 const Index = () => {
   const nextRace = {
-    name: "Course du Col du Galibier",
-    date: "15 Septembre 2024",
-    location: "Valloire, Alpes",
-    description: "Défiez-vous sur les pentes mythiques du Col du Galibier, une course épique au cœur des Alpes françaises.",
+    name: "Course du Col d'Eze",
+    date: "12 Octobre 2026",
+    location: "Nice, Côte d'Azur",
+    description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au cœur des Alpes françaises.",
   };
 
   return (
