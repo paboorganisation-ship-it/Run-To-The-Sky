@@ -46,6 +46,13 @@ const Calendrier = () => {
       description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
       imageUrl: "/images/Alpe huez.jpg",
     },
+    {
+      name: "Clermont - Puy de Dôme",
+      date: "10 Septembre 2027",
+      location: "Clermont-Ferrand, Auvergne",
+      description: "Une course emblématique au cœur de l'Auvergne, avec l'ascension du majestueux Puy de Dôme.",
+      imageUrl: "https://images.unsplash.com/photo-1620446900000-000000000000?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
 
   const handleRegisterClick = (raceName: string) => {
