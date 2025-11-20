@@ -19,7 +19,7 @@ export function NextRaceCard({ race }: NextRaceCardProps) {
 
   return (
     <>
-      <Card className="w-full max-w-md mx-auto">
+      <Card className="w-full"> {/* 'max-w-md mx-auto' a été retiré pour permettre au carrousel de gérer la largeur */}
         <CardHeader>
           <CardTitle>{race.name}</CardTitle>
           <CardDescription>{race.description}</CardDescription>
