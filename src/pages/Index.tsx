@@ -5,7 +5,7 @@ import { RacesCarousel } from "@/components/RacesCarousel";
 import { races } from "@/data/races"; // Importez les données des courses
 
 const Index = () => {
-  const heroImageUrl = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmcRowKJx7M8zzvAhW7J2JMPZX8hlzt1uoWMWOkiSy0ac99Uf"; // URL du Galibier mise à jour
+  const heroImageUrl = "https://miro.medium.com/v2/resize:fit:1400/1*jI7dGJJ-JuinU9Va2c16Hg.jpeg"; // URL de l'image d'arrière-plan mise à jour
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-between bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
