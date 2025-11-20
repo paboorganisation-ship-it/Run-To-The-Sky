@@ -17,6 +17,9 @@ interface Race {
   date: string;
   location: string;
   description: string;
+  imageUrl?: string; // Ajout de la propriété imageUrl
+  distance?: string; // Ajout de la propriété distance
+  elevationGain?: string; // Ajout de la propriété elevationGain
 }
 
 interface RacesCarouselProps {

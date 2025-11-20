@@ -11,7 +11,9 @@ interface NextRaceCardProps {
     date: string;
     location: string;
     description: string;
-    imageUrl?: string; // Ajout de la propriété imageUrl
+    imageUrl?: string;
+    distance?: string; // Ajout de la propriété distance
+    elevationGain?: string; // Ajout de la propriété elevationGain
   };
 }
 
@@ -27,8 +29,14 @@ export function NextRaceCard({ race }: NextRaceCardProps) {
         </CardHeader>
         <CardContent>
           <p className="text-lg font-medium mb-2">Date : {race.date}</p>
-          <p className="text-lg font-medium">Lieu : {race.location}</p>
-          {race.imageUrl && ( // Afficher l'image si imageUrl est disponible
+          <p className="text-lg font-medium mb-2">Lieu : {race.location}</p>
+          {race.distance && (
+            <p className="text-lg font-medium mb-2">Distance : {race.distance}</p>
+          )}
+          {race.elevationGain && (
+            <p className="text-lg font-medium mb-2">Dénivelé : {race.elevationGain}</p>
+          )}
+          {race.imageUrl && (
             <img
               src={race.imageUrl}
               alt={`Vue de ${race.name}`}

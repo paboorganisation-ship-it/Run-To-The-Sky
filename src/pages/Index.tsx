@@ -11,6 +11,8 @@ const Index = () => {
       location: "Nice, Côte d'Azur",
       description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au bord de la mer Méditerranée et au pied des Alpes.",
       imageUrl: "https://cdn.shopify.com/s/files/1/0612/2635/2718/files/2021_05_col-series-eze-3-14052021.jpg",
+      distance: "12,6km",
+      elevationGain: "507m d+",
     },
     {
       name: "Marseille - Col de l'Espigoulier",
@@ -18,6 +20,8 @@ const Index = () => {
       location: "Marseille, Provence",
       description: "Une course exigeante à travers les paysages provençaux, culminant au Col de l'Espigoulier.",
       imageUrl: "/images/Espigoulier.jpg", // Utilisation de l'image locale Espigoulier.jpg
+      distance: "11,2km",
+      elevationGain: "574m d+",
     },
     {
       name: "Annecy - Semnoz",
@@ -25,6 +29,8 @@ const Index = () => {
       location: "Annecy, Alpes",
       description: "Découvrez les panoramas exceptionnels du Semnoz avec vue sur le lac d'Annecy.",
       imageUrl: "/images/Semnoz.jpg", // Utilisation de l'image locale Semnoz.jpg
+      distance: "17,4km",
+      elevationGain: "1212m d+",
     },
     {
       name: "Briançon - Col du Lautaret",
