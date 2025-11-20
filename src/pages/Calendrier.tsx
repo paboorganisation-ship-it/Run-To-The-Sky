@@ -3,63 +3,14 @@
 import React from "react";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button"; // Import du bouton pour l'inscription
-import { RegistrationForm } from "@/components/RegistrationForm"; // Import du formulaire d'inscription
+import { Button } from "@/components/ui/button";
+import { RegistrationForm } from "@/components/RegistrationForm";
+import { races, Race } from "@/data/races"; // Importez les données des courses et l'interface Race
+import { Link } from "react-router-dom"; // Importez Link
 
 const Calendrier = () => {
   const [isRegistrationOpen, setIsRegistrationOpen] = React.useState(false);
   const [selectedRaceName, setSelectedRaceName] = React.useState("");
-
-  const upcomingRaces = [
-    {
-      name: "Nice - Col d'Eze",
-      date: "12 Octobre 2026",
-      location: "Nice, Côte d'Azur",
-      description: "Défiez-vous sur les pentes mythiques du Col d'Eze, une course épique au bord de la mer Méditerranée et au pied des Alpes.",
-      imageUrl: "https://cdn.shopify.com/s/files/1/0612/2635/2718/files/2021_05_col-series-eze-3-14052021.jpg",
-      distance: "12,6km",
-      elevationGain: "507m d+",
-    },
-    {
-      name: "Marseille - Col de l'Espigoulier",
-      date: "20 Avril 2027",
-      location: "Marseille, Provence",
-      description: "Une course exigeante à travers les paysages provençaux, culminant au Col de l'Espigoulier.",
-      imageUrl: "/images/Espigoulier.jpg",
-      distance: "11,2km",
-      elevationGain: "574m d+",
-    },
-    {
-      name: "Annecy - Semnoz",
-      date: "15 Juin 2027",
-      location: "Annecy, Alpes",
-      description: "Découvrez les panoramas exceptionnels du Semnoz avec vue sur le lac d'Annecy.",
-      imageUrl: "/images/Semnoz.jpg",
-      distance: "17,4km",
-      elevationGain: "1212m d+",
-    },
-    {
-      name: "Briançon - Col du Lautaret",
-      date: "25 Juillet 2027",
-      location: "Briançon, Hautes-Alpes",
-      description: "Une ascension légendaire dans les Alpes, au cœur des paysages grandioses du Lautaret.",
-      imageUrl: "/images/Lautaret.jpg",
-    },
-    {
-      name: "L'Alpe d'Huez",
-      date: "15 Août 2027",
-      location: "L'Alpe d'Huez, Isère",
-      description: "Le défi mythique des 21 virages, une course emblématique pour les grimpeurs.",
-      imageUrl: "/images/Alpe huez.jpg",
-    },
-    {
-      name: "Clermont - Puy de Dôme",
-      date: "10 Septembre 2027",
-      location: "Clermont-Ferrand, Auvergne",
-      description: "Une course emblématique au cœur de l'Auvergne, avec l'ascension du majestueux Puy de Dôme.",
-      imageUrl: "https://images.unsplash.com/photo-1620446900000-000000000000?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
 
   const handleRegisterClick = (raceName: string) => {
     setSelectedRaceName(raceName);
@@ -73,10 +24,12 @@ const Calendrier = () => {
           Le calendrier des courses
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          {upcomingRaces.map((race, index) => (
+          {races.map((race: Race, index: number) => ( // Utilisez les données importées
             <Card key={index} className="text-left flex flex-col">
               <CardHeader>
-                <CardTitle>{race.name}</CardTitle>
+                <Link to={`/races/${race.slug}`} className="hover:underline">
+                  <CardTitle>{race.name}</CardTitle>
+                </Link>
                 <CardDescription>{race.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">

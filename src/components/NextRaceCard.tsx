@@ -4,6 +4,7 @@ import * as React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { RegistrationForm } from "./RegistrationForm";
+import { Link } from "react-router-dom"; // Importez Link
 
 interface NextRaceCardProps {
   race: {
@@ -14,6 +15,7 @@ interface NextRaceCardProps {
     imageUrl?: string;
     distance?: string;
     elevationGain?: string;
+    slug: string; // Ajout de la propriété slug
   };
 }
 
@@ -24,7 +26,9 @@ export function NextRaceCard({ race }: NextRaceCardProps) {
     <>
       <Card className="w-full">
         <CardHeader>
-          <CardTitle>{race.name}</CardTitle>
+          <Link to={`/races/${race.slug}`} className="hover:underline">
+            <CardTitle>{race.name}</CardTitle>
+          </Link>
           <CardDescription>{race.description}</CardDescription>
         </CardHeader>
         <CardContent>

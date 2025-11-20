@@ -8,7 +8,8 @@ import NotFound from "./pages/NotFound";
 import { Navbar } from "./components/Navbar";
 import LaSerie from "./pages/LaSerie";
 import Calendrier from "./pages/Calendrier";
-import PrepareTaCourse from "./pages/PrepareTaCourse"; // Importez la nouvelle page
+import PrepareTaCourse from "./pages/PrepareTaCourse";
+import RaceDetail from "./pages/RaceDetail"; // Importez la nouvelle page RaceDetail
 
 const queryClient = new QueryClient();
 
@@ -23,7 +24,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/la-serie" element={<LaSerie />} />
           <Route path="/calendrier" element={<Calendrier />} />
-          <Route path="/prepare-ta-course" element={<PrepareTaCourse />} /> {/* Nouvelle route */}
+          <Route path="/prepare-ta-course" element={<PrepareTaCourse />} />
+          <Route path="/races/:raceSlug" element={<RaceDetail />} /> {/* Nouvelle route pour les détails de course */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
